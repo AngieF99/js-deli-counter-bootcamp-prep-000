@@ -14,6 +14,10 @@ function nowServing(katzDeli, name) {
   }
 }
 
-function currentLine() {
-  
+function currentLine(katzDeli) {
+  if(katzDeli.length >= 1) {
+    return `The current line is ${katzDeli.length}`
+  } else {
+    return `This line is currently empty`
+  }
 }
